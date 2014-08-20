@@ -29,7 +29,14 @@ a {
 	color: #fff;
 	font-size: 15px;
 
-	background: $darkGray no-repeat center center;
+	background: #5b3540;
+	background: -moz-linear-gradient(45deg,  #5b3540 0%, #20162f 100%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#5b3540), color-stop(100%,#20162f));
+	background: -webkit-linear-gradient(45deg,  #5b3540 0%,#20162f 100%);
+	background: -o-linear-gradient(45deg,  #5b3540 0%,#20162f 100%);
+	background: -ms-linear-gradient(45deg,  #5b3540 0%,#20162f 100%);
+	background: linear-gradient(45deg,  #5b3540 0%,#20162f 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b3540', endColorstr='#20162f',GradientType=1 );
 	background-size: cover;
 	background-position: 20%;
 	-webkit-transform: translateZ(0);
@@ -79,7 +86,7 @@ a {
 		-moz-border-radius: 99em;
 		border-radius: 99em;
 		border: 5px solid #eee;
-		box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+		box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 	}
 
 	.social-icons {

@@ -54,14 +54,17 @@ h2 {
     line-height: 1.2em;
     letter-spacing: -1px;
     text-indent: -2px;
+    margin-top: 3em;
 }
 
 h3 {
     font-size: 30px;
+    margin-top: 2em;
 }
 
 h4 {
     font-size: 25px;
+    margin-top: 1.5em;
 }
 
 h5 {
@@ -189,8 +192,8 @@ kbd {
     font-weight: bold;
     background: #f4f4f4;
     border-radius: 4px;
-    box-shadow: 
-        0 1px 0 rgba(0, 0, 0, 0.2), 
+    box-shadow:
+        0 1px 0 rgba(0, 0, 0, 0.2),
         0 1px 0 0 #fff inset;
 }
 

@@ -5,18 +5,21 @@
   font-weight: 400;
   src: local("Open Sans"), local("OpenSans"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
 }
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
   src: local("Open Sans Bold"), local("OpenSans-Bold"), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format("woff");
 }
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   src: local("Roboto Regular"), local("Roboto-Regular"), url(http://themes.googleusercontent.com/static/fonts/roboto/v10/2UX7WLTfW3W8TclTUvlFyQ.woff) format("woff");
 }
+
 @font-face {
   font-family: 'phantom';
   src: url("../font/phantom.eot?33740492");
@@ -24,6 +27,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
@@ -155,14 +159,17 @@ h2 {
   line-height: 1.2em;
   letter-spacing: -1px;
   text-indent: -2px;
+  margin-top: 3em;
 }
 
 h3 {
   font-size: 30px;
+  margin-top: 2em;
 }
 
 h4 {
   font-size: 25px;
+  margin-top: 1.5em;
 }
 
 h5 {
@@ -361,7 +368,14 @@ a:hover {
   text-align: center;
   color: #fff;
   font-size: 15px;
-  background: #303538 no-repeat center center;
+  background: #5b3540;
+  background: -moz-linear-gradient(45deg, #5b3540 0%, #20162f 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #5b3540), color-stop(100%, #20162f));
+  background: -webkit-linear-gradient(45deg, #5b3540 0%, #20162f 100%);
+  background: -o-linear-gradient(45deg, #5b3540 0%, #20162f 100%);
+  background: -ms-linear-gradient(45deg, #5b3540 0%, #20162f 100%);
+  background: linear-gradient(45deg, #5b3540 0%, #20162f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5b3540', endColorstr='#20162f',GradientType=1 );
   background-size: cover;
   background-position: 20%;
   -webkit-transform: translateZ(0);
@@ -428,7 +442,7 @@ a:hover {
   hyphens: auto;
 }
 .content .post .post-title {
-  margin: 0;
+  margin: 1em 0 0 0;
 }
 .content .post .post-title a {
   text-decoration: none;
@@ -484,4 +498,7 @@ a:hover {
   .content {
     margin-left: 0px;
   }
+}
+.post-content img {
+  width: 100%;
 }
